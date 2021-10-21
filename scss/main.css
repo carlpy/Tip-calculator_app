@@ -1,0 +1,187 @@
+/* (form inputs) */
+* {
+  box-sizing: border-box;
+  font-family: "Space Mono";
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul li, li {
+  list-style: none;
+}
+
+body {
+  background-color: #c5e4e7;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+input {
+  background-color: transparent;
+  outline: none;
+  color: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.img-container {
+  display: flex;
+  height: 20vh;
+  width: 100%;
+}
+.img-container img {
+  display: block;
+  margin: auto;
+}
+
+main {
+  background-color: white;
+  border-radius: 0.5rem;
+  position: absolute;
+  height: 80vh;
+  left: 50%;
+  margin: auto;
+  max-height: 38rem;
+  max-width: 64rem;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+main section {
+  padding: 1.5rem;
+}
+main section p {
+  margin: 0 0 1rem 0;
+}
+main .counters {
+  align-items: center;
+  background-color: #F3F8FB;
+  border: 0;
+  border-radius: 2.5px;
+  display: flex;
+  padding: 0 1rem;
+}
+main .counters img {
+  height: auto;
+  width: 0.9rem;
+}
+main .counters input {
+  border: none;
+  color: #00494d;
+  font-size: 1.45rem;
+  padding: 0.5rem;
+  text-align: end;
+  width: 100%;
+}
+main .tip-selection div {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+main .tip-selection button, main .tip-selection input {
+  background-color: #00494d;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+main .tip-selection button:focus {
+  background-color: #26c0ab;
+  color: #00494d;
+}
+main .tip-selection input {
+  background-color: #f4fafa;
+  color: #00494d;
+  text-align: end;
+}
+main .tip-selection input::placeholder {
+  color: inherit;
+}
+main .total-counts {
+  background-color: #00494d;
+  border-radius: 1%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .total-counts .total__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 1.5rem 0;
+}
+main .total-counts .total__container div p {
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+}
+main .total-counts .total__container div span {
+  color: #7f9c9f;
+  font-size: 0.89rem;
+}
+main .total-counts .total__container p {
+  font-size: 2rem;
+  color: #26c0ab;
+}
+main .total-counts button {
+  background-color: #26c0ab;
+  border-radius: 5px;
+  color: #00494d;
+  font-size: 1.25rem;
+  margin: 2rem 0 0 0;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  main {
+    width: 90%;
+    height: 55vh;
+    top: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  main section {
+    padding: 0;
+  }
+  main .tip__container section {
+    padding: 1rem 1.5rem;
+  }
+  main .total-counts {
+    padding: 1.5rem;
+  }
+  main .tip-selection div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  main .tip-selection button, main .tip-selection input {
+    font-size: 1.5rem;
+  }
+}
+
+.attribution {
+  display: none;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=main.css.map */

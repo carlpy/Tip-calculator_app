@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="scss/main.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="img-container">
+    <img src="./images/logo.svg" alt="the app logo">
+  </div>
+  
+  <main>
+
+    <div class="tip__container">
+
+      <section class="bill-count count">
+        <p>Bill</p>
+  
+        <div class="counters">
+          <img src="./images/icon-dollar.svg">        
+          <input class="bill__input" type="number" name="" id="">
+        </div>
+      </section>
+  
+      <section class="tip-selection count">
+        <p>Select Tip %</p>
+  
+        <div>
+          <button>5%</button>
+          <button>10%</button>
+          <button>15%</button>
+          <button>25%</button>
+          <button>50%</button>
+          <input type="number" name="" placeholder="Custom">
+        </div>
+      </section>
+  
+      <section class="number-tips count">
+        <p>Number of People</p>
+  
+        <div class="counters">
+          <img src="./images/icon-person.svg">        
+          <input class="number-tips__input" type="number" name="" id="">
+        </div>
+      </section>
+  
+    </div>
+
+    <section class="total-counts count">
+
+      <div>
+        <div class="total__container">
+          <div>
+            <p>Tip Amount </p>
+            <span>/ person</span>
+          </div>
+  
+          <p class="tip-amount__text">$0.00</p>
+        </div>
+  
+        <div class="total__container">
+          <div>
+            <p>Total</p>
+            <span>/ person</span>
+          </div>
+  
+          <p class="tip-amount__text">$0.00</p>
+        </div>
+      </div>
+  
+      <button>RESET</button>
+    </section>
+
+  </main>
+    
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>

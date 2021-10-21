@@ -1,0 +1,30 @@
+@use '../1-helpers/varables' as var;
+
+* {
+    box-sizing: border-box;
+    font-family: var.$font-family;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a { color: inherit; text-decoration: none; }
+ul li, li { list-style: none; }
+
+body {
+    background-color: var.$Light-grayish-cyan;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+input {
+    background-color: transparent;
+    outline: none;
+    color: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
