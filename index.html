@@ -20,12 +20,12 @@
 
     <div class="tip__container">
 
-      <section class="bill-count count">
+      <section class="count">
         <p>Bill</p>
   
-        <div class="counters">
-          <img src="./images/icon-dollar.svg">        
-          <input class="bill__input" type="number" name="" id="">
+        <div class="main__inputs">
+          <img src="./images/icon-dollar.svg">
+          <input id="bill-input" type="number"> 
         </div>
       </section>
   
@@ -33,21 +33,24 @@
         <p>Select Tip %</p>
   
         <div>
-          <button>5%</button>
-          <button>10%</button>
-          <button>15%</button>
-          <button>25%</button>
-          <button>50%</button>
-          <input type="number" name="" placeholder="Custom">
+          <button class="tip-btns">5%</button>
+          <button class="tip-btns">10%</button>
+          <button class="tip-btns">15%</button>
+          <button class="tip-btns">25%</button>
+          <button class="tip-btns">50%</button>
+          <input id="custom-input" type="number" name="" placeholder="Custom">
         </div>
       </section>
   
       <section class="number-tips count">
-        <p>Number of People</p>
+        <div class="number__container">
+          <p>Number of People</p>
+          <p class="number__alert"></p>
+        </div>
   
-        <div class="counters">
+        <div class="main__inputs number">
           <img src="./images/icon-person.svg">        
-          <input class="number-tips__input" type="number" name="" id="">
+          <input id="number-input" type="number">
         </div>
       </section>
   
@@ -56,26 +59,26 @@
     <section class="total-counts count">
 
       <div>
-        <div class="total__container">
+        <div class="total__container"> <!-- this says the total tip -->
           <div>
             <p>Tip Amount </p>
             <span>/ person</span>
           </div>
   
-          <p class="tip-amount__text">$0.00</p>
+          <p class="tip-amount">$0.00</p>
         </div>
   
-        <div class="total__container">
+        <div class="total__container"> <!-- this says the total bill -->
           <div>
             <p>Total</p>
             <span>/ person</span>
           </div>
   
-          <p class="tip-amount__text">$0.00</p>
+          <p class="bill-count">$0.00</p>
         </div>
       </div>
   
-      <button>RESET</button>
+      <button class="reset-btn">RESET</button>
     </section>
 
   </main>
@@ -84,5 +87,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="app.js"></script>
 </body>
 </html>

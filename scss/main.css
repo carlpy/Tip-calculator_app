@@ -63,7 +63,12 @@ main section {
 main section p {
   margin: 0 0 1rem 0;
 }
-main .counters {
+main .tip__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+main .main__inputs {
   align-items: center;
   background-color: #F3F8FB;
   border: 0;
@@ -71,11 +76,11 @@ main .counters {
   display: flex;
   padding: 0 1rem;
 }
-main .counters img {
+main .main__inputs img {
   height: auto;
   width: 0.9rem;
 }
-main .counters input {
+main .main__inputs input {
   border: none;
   color: #00494d;
   font-size: 1.45rem;
@@ -97,7 +102,7 @@ main .tip-selection button, main .tip-selection input {
   padding: 0.5rem 1rem;
   width: 100%;
 }
-main .tip-selection button:focus {
+main .tip-selection .btn-focus {
   background-color: #26c0ab;
   color: #00494d;
 }
@@ -105,9 +110,23 @@ main .tip-selection input {
   background-color: #f4fafa;
   color: #00494d;
   text-align: end;
+  border: 1px solid transparent;
 }
 main .tip-selection input::placeholder {
-  color: inherit;
+  color: #c5e4e7;
+}
+main .tip-selection input:focus {
+  border: 1px solid #26c0ab;
+}
+main .number__container {
+  display: flex;
+  justify-content: space-between;
+}
+main .number__container .number__alert {
+  color: #d44d3b;
+}
+main .alert {
+  border: 1px solid #f37362;
 }
 main .total-counts {
   background-color: #00494d;
@@ -137,6 +156,7 @@ main .total-counts .total__container p {
 }
 main .total-counts button {
   background-color: #26c0ab;
+  border: none;
   border-radius: 5px;
   color: #00494d;
   font-size: 1.25rem;
